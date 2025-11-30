@@ -1,4 +1,4 @@
-## Preferred IDE: Pycharm
+## IDE: Pycharm
 
 ### Test the streamlit app on local:
 
