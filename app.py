@@ -17,7 +17,7 @@ with st.sidebar:
                            default_index=0)
 
 
-# Diabetes Prediction Page
+# Credit risk Prediction Page
 
 if selected == 'Risk Prediction':
 
@@ -56,7 +56,7 @@ if selected == 'Risk Prediction':
 
 
     # code for Prediction
-    diab_diagnosis = ''
+    status_index = ''
 
     # creating a button for Prediction
 
@@ -69,9 +69,10 @@ if selected == 'Risk Prediction':
         Risk_prediction = final_test_model.predict([user_input])
 
         if Risk_prediction[0] == 1:
-            diab_diagnosis = 'The status is default'
+            status_index = 'The status is default'
         else:
-            diab_diagnosis = 'The status is not default'
+            status_index = 'The status is not default'
 
-    st.success(risk_diagnosis)
+    st.success(status_index)
+
 
