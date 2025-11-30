@@ -11,7 +11,7 @@ diabetes_model = pickle.load(open('final_best_model.sav', 'rb'))
 with st.sidebar:
     selected = option_menu('P2P risk management',
 
-                           ['Risk status classification],
+                           ['Risk status classification'],
                            menu_icon='P2P risk management',
                            icons=['risk'],
                            default_index=0)
@@ -74,5 +74,6 @@ if selected == 'Risk Prediction':
             status_index = 'The status is not default'
 
     st.success(status_index)
+
 
 
